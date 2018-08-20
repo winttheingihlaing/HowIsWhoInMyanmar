@@ -1,4 +1,4 @@
-'<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,6 +14,14 @@
     <link href="css/mdb.min.css" rel="stylesheet">
     <!-- Your custom styles (optional) -->
     <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="js/style.js" rel="stylesheet">
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#dtBasicExample').DataTable();
+            $('.dataTables_length').addClass('bs-select');
+        });
+    </script>
 </head>
 
 <body class="grey lighten-3">
@@ -122,43 +130,58 @@
             
             <!--Grid row-->
 
-            <!--News card-->
-<div class="card mb-3 text-center hoverable">
-    <div class="card-body">
-        <!--Grid row-->
-        <div class="row">
+            <!-- Editable table -->
+            <div class="card">
+                        <h3 class="card-header text-center font-weight-bold py-4">About Team Roles</h3>
+                        <div class="card-body">
+                            <div id="table" class="table-editable">
+                                <span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"></a></span>
+                                <table class="table table-bordered table-responsive-md table-striped text-center">
+                                    <tr>
+                                        <th class="text-center">Name</th>
+                                        <th class="text-center">Role</th>
+                                        <th class="text-center">Description</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="pt-3-half" contenteditable="true">Mg Thura Aung</td>
+                                        <td class="pt-3-half" contenteditable="true">Team Lead</td>
+                                        <td class="pt-3-half text-justify" contenteditable="true">Deepends The National League for Democracy is a social-democratic and liberal democratic political party in Myanmar (Burma), currently serving as the governing party. Founded on 27 September 1988, it has become one of the most influential parties in Myanmar's pro-democracy movement. Special Honorary President of the Socialist International[3][4] and Nobel Peace Prize laureate Aung San Suu Kyi serves as its President and she is currently serving as State Counsellor of Myanmar. The party won a substantial parliamentary majority in the 1990 Burmese general election. However, the ruling military junta refused to recognise the result. On 6 May 2010, the party was declared illegal and ordered to be disbanded by the junta after refusing to register for the elections slated for November 2010.[5] In November 2011, the NLD announced its intention to register as a political party to contend future elections and on 13 December 2011, Burma's Union Election Commission approved their application for registration.[6]</td>
+                                    </tr>
+                                    <!-- This is our clonable table line -->
+                                    <tr>
+                                        <td class="pt-3-half" contenteditable="true">Ma Wint Theingi Hlaing</td>
+                                        <td class="pt-3-half" contenteditable="true">UIUX Lead</td>
+                                        <td class="pt-3-half text-justify" contenteditable="true">Deepends The National League for Democracy is a social-democratic and liberal democratic political party in Myanmar (Burma), currently serving as the governing party. Founded on 27 September 1988, it has become one of the most influential parties in Myanmar's pro-democracy movement. Special Honorary President of the Socialist International[3][4] and Nobel Peace Prize laureate Aung San Suu Kyi serves as its President and she is currently serving as State Counsellor of Myanmar. The party won a substantial parliamentary majority in the 1990 Burmese general election. However, the ruling military junta refused to recognise the result. On 6 May 2010, the party was declared illegal and ordered to be disbanded by the junta after refusing to register for the elections slated for November 2010.[5] In November 2011, the NLD announced its intention to register as a political party to contend future elections and on 13 December 2011, Burma's Union Election Commission approved their application for registration.[6]</td>
+                                    </tr>
+                                    <!-- This is our clonable table line -->
+                                    <tr>
+                                        <td class="pt-3-half" contenteditable="true">Ma Sandar Win</td>
+                                        <td class="pt-3-half" contenteditable="true">UIUX Dev</td>
+                                        <td class="pt-3-half text-justify" contenteditable="true">Deepends The National League for Democracy is a social-democratic and liberal democratic political party in Myanmar (Burma), currently serving as the governing party. Founded on 27 September 1988, it has become one of the most influential parties in Myanmar's pro-democracy movement. Special Honorary President of the Socialist International[3][4] and Nobel Peace Prize laureate Aung San Suu Kyi serves as its President and she is currently serving as State Counsellor of Myanmar. The party won a substantial parliamentary majority in the 1990 Burmese general election. However, the ruling military junta refused to recognise the result. On 6 May 2010, the party was declared illegal and ordered to be disbanded by the junta after refusing to register for the elections slated for November 2010.[5] In November 2011, the NLD announced its intention to register as a political party to contend future elections and on 13 December 2011, Burma's Union Election Commission approved their application for registration.[6]</td>
+                                    </tr>
+                                    <!-- This is our clonable table line -->
+                                    <tr class="hide">
+                                        <td class="pt-3-half" contenteditable="true">Ma Yadanar Win</td>
+                                        <td class="pt-3-half" contenteditable="true">Dev 1</td>
+                                        <td class="pt-3-half text-justify" contenteditable="true">Deepends The National League for Democracy is a social-democratic and liberal democratic political party in Myanmar (Burma), currently serving as the governing party. Founded on 27 September 1988, it has become one of the most influential parties in Myanmar's pro-democracy movement. Special Honorary President of the Socialist International[3][4] and Nobel Peace Prize laureate Aung San Suu Kyi serves as its President and she is currently serving as State Counsellor of Myanmar. The party won a substantial parliamentary majority in the 1990 Burmese general election. However, the ruling military junta refused to recognise the result. On 6 May 2010, the party was declared illegal and ordered to be disbanded by the junta after refusing to register for the elections slated for November 2010.[5] In November 2011, the NLD announced its intention to register as a political party to contend future elections and on 13 December 2011, Burma's Union Election Commission approved their application for registration.[6]</td>
+                                    </tr>
 
-            <!--Grid column-->
-            <div class="col-md-4 offset-md-1 mx-3 my-3">
-                <!--Featured image-->
-                <div class="view overlay">
-                    <img src="img/m.jpg" class="img-fluid" alt="Sample image for first version of blog listing">
-                    <a>
-                        <div class="mask rgba-white-slight"></div>
-                    </a>
-                </div>
-            </div>
-            <!--Grid column-->
+                                    <tr class="hide">
+                                        <td class="pt-3-half" contenteditable="true">Ma Su Myat Phyo</td>
+                                        <td class="pt-3-half" contenteditable="true">Dev 2</td>
+                                        <td class="pt-3-half text-justify" contenteditable="true">Deepends The National League for Democracy is a social-democratic and liberal democratic political party in Myanmar (Burma), currently serving as the governing party. Founded on 27 September 1988, it has become one of the most influential parties in Myanmar's pro-democracy movement. Special Honorary President of the Socialist International[3][4] and Nobel Peace Prize laureate Aung San Suu Kyi serves as its President and she is currently serving as State Counsellor of Myanmar. The party won a substantial parliamentary majority in the 1990 Burmese general election. However, the ruling military junta refused to recognise the result. On 6 May 2010, the party was declared illegal and ordered to be disbanded by the junta after refusing to register for the elections slated for November 2010.[5] In November 2011, the NLD announced its intention to register as a political party to contend future elections and on 13 December 2011, Burma's Union Election Commission approved their application for registration.[6]</td>
+                                    </tr>
 
-            <!--Grid column-->
-            <div class="col-md-7 text-left ml-3 mt-3">
-                <!--Excerpt-->
-                <a href="" class="green-text">
-                    <h6 class="font-bold pb-1"><i class="fa fa-desktop"></i> Work</h6>
-                </a>
-                <h4 class="mb-4"><strong>This is title of the news</strong></h4>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque, totam
-                    rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                    dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur.</p>
-                <p>by <a><strong>Carine Fox</strong></a>, 19/08/2016</p>
-                <a class="btn btn-success">Read more</a>
+                                    <tr class="hide">
+                                        <td class="pt-3-half" contenteditable="true">Mg Kaung Htet Aung</td>
+                                        <td class="pt-3-half" contenteditable="true">Test and Documentation</td>
+                                        <td class="pt-3-half text-justify" contenteditable="true">Deepends The National League for Democracy is a social-democratic and liberal democratic political party in Myanmar (Burma), currently serving as the governing party. Founded on 27 September 1988, it has become one of the most influential parties in Myanmar's pro-democracy movement. Special Honorary President of the Socialist International[3][4] and Nobel Peace Prize laureate Aung San Suu Kyi serves as its President and she is currently serving as State Counsellor of Myanmar. The party won a substantial parliamentary majority in the 1990 Burmese general election. However, the ruling military junta refused to recognise the result. On 6 May 2010, the party was declared illegal and ordered to be disbanded by the junta after refusing to register for the elections slated for November 2010.[5] In November 2011, the NLD announced its intention to register as a political party to contend future elections and on 13 December 2011, Burma's Union Election Commission approved their application for registration.[6]</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
             </div>
-            <!--Grid column-->
-        </div>
-        <!--Grid row-->
-    </div>
-</div>
-<!--News card-->
+<!-- Editable table -->
        
            
             
